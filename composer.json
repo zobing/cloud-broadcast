@@ -1,0 +1,22 @@
+{
+    "name": "zobeen/cloud-broadcast",
+    "description": "Unified access service for cloud broadcasting devices",
+    "homepage": "http://122.114.33.66:8090/zobeen/cloud-broadcast",
+    "type": "library",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zobeen",
+            "email": "zobeen@163.com"
+        }
+    ],
+    "require": {
+        "alibabacloud/iot": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "zobeen\\cloudbroadcast\\": "src/"
+        }
+    }
+}
