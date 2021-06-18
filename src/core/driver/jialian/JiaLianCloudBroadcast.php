@@ -98,6 +98,10 @@ class JiaLianCloudBroadcast implements CloudBroadcastInterface
      */
     protected function createSign($params, $key)
     {
+        // 根据官方文档：extra 不参与签名计算
+        if (isset($params['extra'])) {
+            unset($params['extra']);
+        }
 
         $signPars = '';
         ksort($params);
